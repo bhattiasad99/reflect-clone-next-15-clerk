@@ -6,6 +6,8 @@ import HeaderComponent from "@/components/usecase/HeaderComponent";
 import {
   ClerkProvider,
 } from '@clerk/nextjs'
+import { TooltipProvider } from "@radix-ui/react-tooltip";
+import { pageSpace } from "@/constants";
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -22,24 +24,26 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-      <html lang="en">
-        <body
-          className={`${inter.className} antialiased`}
-        >
-          <div className="opacity-50 fixed -z-10 inset-0">
-            <ImageComponent source={'/global-assets/bg.jpg'} objectFit="cover" alt="background" />
-          </div>
-          <HeaderComponent />
-          <main className="min-h-screen">
-            {children}
-          </main>
-          <footer className="bg-orange-300 py-12 bg-opacity-10 ">
-            <div className="mx-auto px-4 text-center text-gray-900">
-              <p>Made with ❤️ by Asad Zubair Bhatti</p>
+      <TooltipProvider>
+        <html lang="en">
+          <body
+            className={`${inter.className} antialiased`}
+          >
+            <div className="opacity-50 fixed -z-10 inset-0">
+              <ImageComponent source={'/global-assets/bg.jpg'} objectFit="cover" alt="background" />
             </div>
-          </footer>
-        </body>
-      </html>
+            <HeaderComponent />
+            <main className={`min-h-screen ${pageSpace}`}>
+              {children}
+            </main>
+            <footer className={`bg-orange-300 py-12 bg-opacity-10 ${pageSpace}`}>
+              <div className="mx-auto px-4 text-center text-gray-900">
+                <p>Made with ❤️ by Asad Zubair Bhatti</p>
+              </div>
+            </footer>
+          </body>
+        </html>
+      </TooltipProvider>
     </ClerkProvider>
 
   );
