@@ -1,3 +1,5 @@
+import CTAComponent from "@/components/usecase/CTAComponent";
+import FAQComponent from "@/components/usecase/FAQComponent";
 import FeaturesSectionComponent from "@/components/usecase/FeaturesSectionComponent";
 import HeroComponent from "@/components/usecase/HeroComponent";
 import MainFeatureComponent from "@/components/usecase/MainFeatureComponent";
@@ -12,6 +14,8 @@ export default function Home() {
       <MainFeatureComponent />
       <MoodAnalytics />
       <TestimonialsComponent />
+      <FAQComponent />
+      <CTAComponent />
     </div>
   );
 }
