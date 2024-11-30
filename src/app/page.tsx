@@ -1,6 +1,7 @@
 import FeaturesSectionComponent from "@/components/usecase/FeaturesSectionComponent";
 import HeroComponent from "@/components/usecase/HeroComponent";
 import MainFeatureComponent from "@/components/usecase/MainFeatureComponent";
+import MoodAnalytics from "@/components/usecase/MoodAnalyticsComponent";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <HeroComponent />
       <FeaturesSectionComponent />
       <MainFeatureComponent />
+      <MoodAnalytics />
     </div>
   );
 }

@@ -3,7 +3,7 @@ import React from 'react'
 
 const RightBox = () => {
     return (
-        <Card className='p-3 space-y-4'>
+        <Card className='p-3 space-y-4 hidden md:block'>
             <div className="flex gap-1">
                 <div className='w-4 h-4 bg-[#fac569]  rounded-md bg-opacity-35' />
                 <div className='w-4 h-4 bg-[#fac569]  rounded-md bg-opacity-35' />

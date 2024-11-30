@@ -36,7 +36,7 @@ export default function RootLayout({
             <main className={`min-h-screen ${pageSpace}`}>
               {children}
             </main>
-            <footer className={`bg-orange-300 py-12 bg-opacity-10 ${pageSpace}`}>
+            <footer className={`bg-orange-300 py-12 bg-opacity-10 w-full mt-4`}>
               <div className="mx-auto px-4 text-center text-gray-900">
                 <p>Made with ❤️ by Asad Zubair Bhatti</p>
               </div>
