@@ -1,10 +1,5 @@
 import { unstable_cache } from "next/cache";
 
-type Slip = {
-    id: number;
-    advice: string;
-}
-
 export const getDailyPrompt = unstable_cache(async (): Promise<{
     id: null | number,
     advice: string

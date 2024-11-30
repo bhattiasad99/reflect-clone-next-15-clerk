@@ -8,8 +8,6 @@ import UserMenuComponent from "../UserMenuComponent"
 import HoverWrapper from "./HoverWrapper"
 
 const HeaderComponent = () => {
-
-
     return (
         <>
             <HoverWrapper>
