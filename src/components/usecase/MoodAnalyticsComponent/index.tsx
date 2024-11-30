@@ -1,14 +1,13 @@
 import React from 'react'
-import RightBox from '../MainFeatureComponent/RightBox'
 import { sectionClasses } from '../MainFeatureComponent'
 import { ChartBar } from 'lucide-react'
 import LandingPageFeature from '@/components/templates/LandingPageFeature'
+import LeftBox from './LeftBox'
 
 const MoodAnalytics = () => {
     return (
         <section className={sectionClasses}>
-
-            <RightBox />
+            <LeftBox />
             <LandingPageFeature
                 icon={<ChartBar size={20} color="#916524" />}
                 title="Mood Analytics"
