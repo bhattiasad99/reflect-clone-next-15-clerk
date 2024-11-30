@@ -17,7 +17,6 @@ const MoodAnalytics = () => {
                     "Pattern Recognition"
                 ]}
             />
-
         </section>
     )
 }

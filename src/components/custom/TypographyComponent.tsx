@@ -29,7 +29,7 @@ const TypographyComponent: FC<IProps<VariantKeys>> = ({ children, variant = "p",
             h3: '',
             h4: '',
             h5: '',
-            p: '',
+            p: 'text-sm',
         }
     }
 

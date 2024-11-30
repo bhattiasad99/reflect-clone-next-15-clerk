@@ -13,7 +13,7 @@ const Feature: FC<IProps> = ({ icon, title, description }) => {
             <div className="bg-[#f3c37c] bg-opacity-25 inline-flex p-2 w-min rounded-full">
                 {icon}
             </div>
-            <CardTitle className='text-[#634518]'>{title}</CardTitle>
+            <CardTitle className='text-titles'>{title}</CardTitle>
             <CardDescription className='text-primary-dark'>{description}</CardDescription>
         </Card>
     )

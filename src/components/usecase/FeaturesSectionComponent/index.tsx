@@ -4,7 +4,7 @@ import { features } from './features'
 
 const FeaturesSectionComponent = () => {
     return (
-        <section id='features' className='flex flex-col md:flex-row justify-stretch gap-4'>
+        <section id='features' className='flex flex-col md:flex-row justify-stretch gap-4 '>
             {features.map(eachFeature => {
                 const props = {
                     title: eachFeature.title,

@@ -9,12 +9,6 @@ const LeftBox = () => {
                 <div className='w-12 h-4 bg-[#fac569]  rounded-md bg-opacity-35' />
                 <div className='w-12 h-4 bg-[#fac569]  rounded-md bg-opacity-35' />
             </div>
-            <div className="flex flex-col gap-2">
-                <div className='h-3 w-3/4 bg-[#fac569]  rounded-md bg-opacity-10' />
-                <div className='h-3 w-full bg-[#fac569]  rounded-md bg-opacity-10' />
-                <div className='h-3 w-1/2 bg-[#fac569]  rounded-md bg-opacity-10' />
-                <div className='h-3 w-1/4 bg-[#fac569]  rounded-md bg-opacity-10' />
-            </div>
         </Card>
     )
 }

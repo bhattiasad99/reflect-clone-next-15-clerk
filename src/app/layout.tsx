@@ -22,10 +22,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <ClerkProvider>
       <TooltipProvider>
-        <html lang="en">
+        <html lang="en" >
           <body
             className={`${inter.className} antialiased`}
           >

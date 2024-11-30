@@ -1,1 +1,1 @@
-export const pageSpace = 'container mx-auto '
+export const pageSpace = 'container mx-auto'
