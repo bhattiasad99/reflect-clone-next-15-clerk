@@ -14,10 +14,10 @@ const LandingPageFeature: FC<IProps> = ({ icon, title, description, points }) =>
             <div className="w-fit p-2 rounded-full bg-orange-200 bg-opacity-15">
                 {icon}
             </div>
-            <TypographyComponent variant='h2' classExtends='title-3'>
+            <TypographyComponent variant='h2' className='title-3'>
                 {title}
             </TypographyComponent>
-            <TypographyComponent variant='p' classExtends='text-primary text-sm'>
+            <TypographyComponent variant='p' className='text-primary text-sm'>
                 {description}
             </TypographyComponent>
             <li className="list-none">

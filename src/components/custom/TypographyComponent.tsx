@@ -14,13 +14,11 @@ type VariantKeys = keyof HeadingVariants;
 type IProps<V extends VariantKeys> = {
     children: ReactNode;
     variant?: V;
-    classExtends?: string; // add more tailwind classes
-    classOverrite?: string; // replace all tailwind classes. If this is applied classExtends will not be considered
+    className?: string; // add more tailwind classes
+    classOverrite?: string; // replace all tailwind classes. If this is applied className will not be considered
 } & HeadingVariants[V];
 
-
-const TypographyComponent: FC<IProps<VariantKeys>> = ({ children, variant = "p", classExtends = '', classOverrite = '', ...otherProps }) => {
-
+const TypographyComponent: FC<IProps<VariantKeys>> = ({ children, variant = "p", className = '', classOverrite = '', ...otherProps }) => {
     const propConfig = {
         common: {},
         baseClasses: {
@@ -33,7 +31,7 @@ const TypographyComponent: FC<IProps<VariantKeys>> = ({ children, variant = "p",
         }
     }
 
-    const buildClass = (elem: VariantKeys) => classOverrite !== '' ? classOverrite : `${propConfig.baseClasses[elem]} ${classExtends}`
+    const buildClass = (elem: VariantKeys) => classOverrite !== '' ? classOverrite : `${propConfig.baseClasses[elem]} ${className}`
 
     switch (variant) {
         case "h1":

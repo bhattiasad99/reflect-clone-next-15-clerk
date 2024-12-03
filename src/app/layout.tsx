@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from 'next/font/google'
 import "./globals.css";
+import "./ckeditor.css";
 import ImageComponent from "@/components/custom/ImageComponent";
 import HeaderComponent from "@/components/usecase/HeaderComponent";
 import {

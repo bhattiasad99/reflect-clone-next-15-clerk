@@ -6,8 +6,11 @@ import ResponsiveIconButton from "./ResponsiveIconButton"
 import { FolderOpen, PenBox } from "lucide-react"
 import UserMenuComponent from "../UserMenuComponent"
 import HoverWrapper from "./HoverWrapper"
+import { checkUser } from "@/lib/checkUser"
 
-const HeaderComponent = () => {
+const HeaderComponent = async () => {
+    await checkUser();
+
     return (
         <>
             <HoverWrapper>

@@ -10,12 +10,16 @@
   },
   "dependencies": {
     "@arcjet/next": "^1.0.0-alpha.33",
+    "@ckeditor/ckeditor5-react": "^9.4.0",
     "@clerk/nextjs": "^6.5.1",
+    "@hookform/resolvers": "^3.9.1",
     "@prisma/client": "^6.0.0",
     "@radix-ui/react-accordion": "^1.2.1",
     "@radix-ui/react-alert-dialog": "^1.1.2",
     "@radix-ui/react-dialog": "^1.1.2",
+    "@radix-ui/react-label": "^2.1.0",
     "@radix-ui/react-popover": "^1.1.2",
+    "@radix-ui/react-select": "^2.1.2",
     "@radix-ui/react-slot": "^1.1.0",
     "@radix-ui/react-tooltip": "^1.1.4",
     "class-variance-authority": "^0.7.1",
@@ -29,10 +33,14 @@
     "react": "19.0.0-rc-66855b96-20241106",
     "react-day-picker": "^8.10.1",
     "react-dom": "19.0.0-rc-66855b96-20241106",
+    "react-hook-form": "^7.53.2",
     "react-intersection-observer": "^9.13.1",
+    "react-quill-new": "^3.3.3",
+    "react-spinners": "^0.14.1",
     "sonner": "^1.7.0",
     "tailwind-merge": "^2.5.5",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@types/node": "^20",

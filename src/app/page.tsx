@@ -1,4 +1,5 @@
 import { getDailyPrompt } from "@/actions/public";
+import PageLayout from "@/components/layouts/PageLayout";
 import CTAComponent from "@/components/usecase/CTAComponent";
 import FAQComponent from "@/components/usecase/FAQComponent";
 import FeaturesSectionComponent from "@/components/usecase/FeaturesSectionComponent";
@@ -11,7 +12,7 @@ export default async function Home() {
   const prompt = await getDailyPrompt()
 
   return (
-    <div className="px-4 space-y-28">
+    <PageLayout className="space-y-28">
       <HeroComponent advice={prompt.advice} />
       <FeaturesSectionComponent />
       <MainFeatureComponent />
@@ -19,6 +20,6 @@ export default async function Home() {
       <TestimonialsComponent />
       <FAQComponent />
       <CTAComponent />
-    </div>
+    </PageLayout>
   );
 }

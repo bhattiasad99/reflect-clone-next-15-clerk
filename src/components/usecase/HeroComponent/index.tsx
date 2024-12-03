@@ -13,11 +13,11 @@ const HeroComponent: FC<IProps> = ({ advice }) => {
     return (
         <div className="py-16">
             <div className="max-w-5xl mx-auto text-center space-y-8 mb-8">
-                <TypographyComponent classExtends="gradient-title" variant="h1" >
+                <TypographyComponent className="gradient-title" variant="h1" >
                     Your Space to Reflect. <br />
                     Your Story to Tell.
                 </TypographyComponent>
-                <TypographyComponent classExtends="text-lg md: text-xl text-primary-dark mb-8">Capture your thoughts, track your moods, and reflect on your journey in a beautiful, secure space.</TypographyComponent>
+                <TypographyComponent className="text-lg md: text-xl text-primary-dark mb-8">Capture your thoughts, track your moods, and reflect on your journey in a beautiful, secure space.</TypographyComponent>
             </div>
             <Sample heading={advice} />
             <div className="flex justify-center items-center my-4 gap-2">
